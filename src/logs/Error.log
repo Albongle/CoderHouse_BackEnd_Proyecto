@@ -7,3 +7,6 @@
 [2022-07-31T00:29:08.037] [ERROR] error - ReferenceError: logger is not defined
     at file:///home/telecom/Documentos/Coder_Proyecto_Final/src/server/server.js:59:44
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-31T01:00:21.973] [ERROR] error - ReferenceError: req is not defined
+    at Function.addOneOrder (file:///home/telecom/Documentos/Coder_Proyecto_Final/src/service/order.Service.js:23:33)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

@@ -2,12 +2,13 @@ import OrderDAO from "../dao/order.DAO.js";
 import OrderMapper from "../mappers/order.Mapper.js";
 import ShoppingCartMapper from "../mappers/shoppingCart.Mapper.js";
 import logs from "../modules//logger/logger.js"
+import { sendEmail } from "../modules/nodemailer/nodemailer.js";
 import ShoppingCartService from "./shoppingCart.Service.js";
 
 const ManagerOrder = new OrderDAO();
 class OrderService{
 
-    static async addOneOrder({shoppingCart})
+    static async addOneOrder({shoppingCart, user})
     {
         try 
         {
@@ -17,9 +18,9 @@ class OrderService{
                 const orderBussinesObject = OrderMapper.getBussinesObject({shoppingCart:shoppingCartBussinesObject});
                 const orderDataTransferObject = await OrderMapper.getDataTransferObject(orderBussinesObject);
                 await ShoppingCartService.deleteAllProductsFromCart({shoppingCart});
-    
+                
                 await ManagerOrder.addElements(orderDataTransferObject);
-
+                await sendEmail(user.email,"Pedido en proceso","<h1>Se proceso su solicitud, lo estaremos nostificando durante el envio</h1>")
                 return {status: "ok", message:"solicitud procesada con exito", code:200, order:orderDataTransferObject};
             }
             return {status: "atencion", message:"no se pudo procesar la solicitud, no posee un carrito con productos", code:200, shoppingCart:{}};
