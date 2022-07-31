@@ -2,6 +2,10 @@ import UserService from "../service/user.Service.js";
 
 class UserController {
 
+    static welcome(req,res)
+    {
+        res.send({message:"Bienvenido a la Api de Alejandro Bongioanni", documentation: "https://documenter.getpostman.com/view/14969183/UzdzTRE1"})
+    }
     static loginUser(req, res)
     {
         UserService.loginUser(req.body)
