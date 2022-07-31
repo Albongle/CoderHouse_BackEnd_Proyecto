@@ -2,7 +2,7 @@ import UserService from "../service/user.Service.js";
 
 class UserController {
 
-    static welcome(req,res)
+    static welcome(_req,res)
     {
         res.send({message:"Bienvenido a la Api de Alejandro Bongioanni", documentation: "https://documenter.getpostman.com/view/14969183/UzdzTRE1"})
     }
