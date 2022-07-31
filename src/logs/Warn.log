@@ -1,0 +1,11 @@
+[2022-07-30T23:38:14.577] [WARN] warn - { ruta: '/', metodo: 'GET' }
+[2022-07-31T00:12:34.049] [WARN] warn - { ruta: '/api/socket.io/socket.io.js', metodo: 'GET' }
+[2022-07-31T00:14:58.942] [WARN] warn - { ruta: '/api/socket.io/socket.io.js', metodo: 'GET' }
+[2022-07-31T00:14:59.787] [WARN] warn - { ruta: '/api/socket.io/socket.io.js', metodo: 'GET' }
+[2022-07-31T00:15:00.163] [WARN] warn - { ruta: '/api/socket.io/socket.io.js', metodo: 'GET' }
+[2022-07-31T00:15:00.325] [WARN] warn - { ruta: '/api/socket.io/socket.io.js', metodo: 'GET' }
+[2022-07-31T00:15:00.468] [WARN] warn - { ruta: '/api/socket.io/socket.io.js', metodo: 'GET' }
+[2022-07-31T00:15:00.671] [WARN] warn - { ruta: '/api/socket.io/socket.io.js', metodo: 'GET' }
+[2022-07-31T00:15:00.800] [WARN] warn - { ruta: '/api/socket.io/socket.io.js', metodo: 'GET' }
+[2022-07-31T00:16:14.133] [WARN] warn - { ruta: '/api/socket.io/socket.io.js', metodo: 'GET' }
+[2022-07-31T00:16:14.755] [WARN] warn - { ruta: '/api/socket.io/socket.io.js', metodo: 'GET' }

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito", sans-serif;
+}
+
+.whatsapp {
+  bottom: 5rem;
+  right: 0rem;
+  position: fixed;
+}
+.whatsapp:hover {
+  cursor: pointer;
+}
+.whatsapp img:hover {
+  transform: scale(1.1, 1.1);
+  transition-delay: 0.1s;
+  transition-duration: 1s;
+}
+
+.dialogo {
+  border-radius: 1rem;
+  position: relative;
+  left: 30vw;
+  background-color: white;
+  border: 0;
+}
+@media (max-width: 768px) {
+  .dialogo {
+    width: 80vw;
+    left: auto;
+  }
+}
+.dialogo .dialogo__btn-cierra {
+  position: relative;
+  top: 10%;
+  left: 90%;
+  border: 0;
+  border-radius: 5rem;
+  padding: 1rem 1.5rem;
+  background-color: steelblue;
+  color: white;
+}
+.dialogo .dialogo__btn-cierra:hover {
+  cursor: pointer;
+}
+.dialogo .dialogo__btn-cierra:active {
+  transform: scale(0.9, 0.9);
+}
+
+.dialogo-chat {
+  background-color: whitesmoke;
+  width: 50rem;
+}
+
+@-webkit-keyframes neon {
+  0% {
+    color: #1a1a1a;
+    text-shadow: hsl(305deg, 100%, 88%);
+  }
+  20% {
+    color: #1a1a1a;
+    text-shadow: 0 0 10px steelblue;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    color: #1a1a1a;
+    text-shadow: 0 0 10px steelblue;
+  }
+}
+
+@keyframes neon {
+  0% {
+    color: #1a1a1a;
+    text-shadow: hsl(305deg, 100%, 88%);
+  }
+  20% {
+    color: #1a1a1a;
+    text-shadow: 0 0 10px steelblue;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    color: #1a1a1a;
+    text-shadow: 0 0 10px steelblue;
+  }
+}
+.container {
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .chat-websocket {
+  border-radius: 0.5rem;
+  margin: 1rem;
+  box-shadow: 0.5rem 0.5rem 2rem gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40rem;
+}
+.container .chat-websocket .websocket-actions {
+  font-size: 1.2rem;
+}
+.container .chat-websocket .websocket-actions p {
+  margin: 1rem;
+  text-shadow: 0 0 1rempx rgba(255, 138, 60, 0.8078431373);
+  -webkit-animation: neon 2s ease-in infinite forwards;
+          animation: neon 2s ease-in infinite forwards;
+}
+.container .chat-websocket .websocket-controls {
+  margin: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .chat-websocket .websocket-controls input,
+.container .chat-websocket .websocket-controls textarea {
+  border: 0.1rem solid grey;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+  resize: none;
+}
+.container .chat-websocket .websocket-controls input:hover {
+  cursor: pointer;
+}
+.container .chat-websocket .websocket-compresion {
+  font-size: 2rem;
+}
+.container .chat-websocket .websocket-messages {
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+.container .chat-websocket .websocket-messages p {
+  margin-top: 0.5rem;
+  padding: 0.5rem 3rem;
+  box-shadow: 0.1rem 0.1rem 1rem gray;
+}
+.container .chat-websocket .websocket-messages p span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.messages-me {
+  margin-right: 2rem;
+  background-color: rgba(116, 160, 95, 0.589);
+}
+
+.messages-other {
+  margin-left: 2rem;
+  background-color: rgba(51, 141, 153, 0.493);
+}
+
+@keyframes neon {
+  0% {
+    color: #1a1a1a;
+    text-shadow: rgba(255, 138, 60, 0.8078431373);
+  }
+  20% {
+    color: #969696;
+    text-shadow: 0 0 1rem rgba(255, 138, 60, 0.8078431373);
+    opacity: 50;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    color: rgba(255, 138, 60, 0.8078431373);
+    text-shadow: 0 0 1rem rgba(255, 138, 60, 0.8078431373);
+  }
+}/*# sourceMappingURL=style.css.map */

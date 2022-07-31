@@ -1,0 +1,9 @@
+[2022-07-31T00:28:19.084] [ERROR] error - ReferenceError: logger is not defined
+    at file:///home/telecom/Documentos/Coder_Proyecto_Final/src/server/server.js:59:44
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-31T00:28:36.603] [ERROR] error - ReferenceError: logger is not defined
+    at file:///home/telecom/Documentos/Coder_Proyecto_Final/src/server/server.js:59:44
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-31T00:29:08.037] [ERROR] error - ReferenceError: logger is not defined
+    at file:///home/telecom/Documentos/Coder_Proyecto_Final/src/server/server.js:59:44
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
